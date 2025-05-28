@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>History</class>
+ <widget class="QWidget" name="History">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>734</width>
+    <height>576</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: qlineargradient(
+            x1:0, y1:0, x2:1, y2:1,
+            stop:0 #e3f2fd,
+            stop:1 #bbdefb
+        );</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>0</y>
+     <width>141</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+        font-size: 15px;
+        font-weight: bold;
+        color: #333;
+        background-color: transparent;
+        text-align: center;
+        padding: 10px;
+        border-radius: 8px;
+        transition: color 0.3s ease-in-out;
+    }
+
+    QLabel:hover {
+        color: #42a5f5;
+    }
+
+    QLabel:focus {
+        color: #1e88e5;
+    }
+</string>
+   </property>
+   <property name="text">
+    <string>You Send</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>470</x>
+     <y>0</y>
+     <width>141</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+        font-size: 15px;
+        font-weight: bold;
+        color: #333;
+        background-color: transparent;
+        text-align: center;
+        padding: 10px;
+        border-radius: 8px;
+        transition: color 0.3s ease-in-out;
+    }
+
+    QLabel:hover {
+        color: #42a5f5;
+    }
+
+    QLabel:focus {
+        color: #1e88e5;
+    }
+</string>
+   </property>
+   <property name="text">
+    <string>Friend Send</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>40</y>
+     <width>661</width>
+     <height>531</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QListView" name="userSendList">
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+        font-size: 20px;
+        font-weight: bold;
+        color: #333;
+        background-color: transparent;
+        text-align: center;
+        padding: 10px;
+        border-radius: 8px;
+        transition: color 0.3s ease-in-out;
+    }
+
+    QLabel:hover {
+        color: #42a5f5;
+    }
+
+    QLabel:focus {
+        color: #1e88e5;
+    }
+</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QListView" name="friendSendList">
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+        font-size: 20px;
+        font-weight: bold;
+        color: #333;
+        background-color: transparent;
+        text-align: center;
+        padding: 10px;
+        border-radius: 8px;
+        transition: color 0.3s ease-in-out;
+    }
+
+    QLabel:hover {
+        color: #42a5f5;
+    }
+
+    QLabel:focus {
+        color: #1e88e5;
+    }
+</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

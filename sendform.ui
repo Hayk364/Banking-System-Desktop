@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SendForm</class>
+ <widget class="QWidget" name="SendForm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: qlineargradient(
+            x1:0, y1:0, x2:1, y2:1,
+            stop:0 #e3f2fd,
+            stop:1 #bbdefb
+        );</string>
+  </property>
+  <widget class="QPushButton" name="send_pushButton">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>220</y>
+     <width>331</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+        background-color: qlineargradient(
+            x1:0, y1:0, x2:1, y2:1,
+            stop:0 #42a5f5,
+            stop:1 #1e88e5
+        );
+        color: white;
+        border: none;
+        border-radius: 10px;
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    QPushButton:hover {
+        background-color: qlineargradient(
+            x1:0, y1:0, x2:1, y2:1,
+            stop:0 #64b5f6,
+            stop:1 #2196f3
+        );
+    }
+
+    QPushButton:pressed {
+        background-color: #1565c0;
+    }</string>
+   </property>
+   <property name="text">
+    <string>Send</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="error_label">
+   <property name="geometry">
+    <rect>
+     <x>47</x>
+     <y>260</y>
+     <width>321</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:red</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>30</y>
+     <width>331</width>
+     <height>181</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QLineEdit" name="count_textField">
+      <property name="styleSheet">
+       <string notr="true">QLineEdit {
+        border: 2px solid #cccccc;
+        border-radius: 10px;
+        padding: 8px 12px;
+        font-size: 16px;
+        background-color: white;
+	    color:#5203fc;
+    }
+
+    QLineEdit:focus {
+        border: 2px solid #4f46e5;
+        background-color: #f9f9ff;
+    }</string>
+      </property>
+      <property name="inputMask">
+       <string>99999</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="frame">
+       <bool>true</bool>
+      </property>
+      <property name="cursorPosition">
+       <number>0</number>
+      </property>
+      <property name="placeholderText">
+       <string>Count</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="token_textField">
+      <property name="styleSheet">
+       <string notr="true">QLineEdit {
+        border: 2px solid #cccccc;
+        border-radius: 10px;
+        padding: 8px 12px;
+        font-size: 16px;
+        background-color: white;
+	    color:#5203fc;
+    }
+
+    QLineEdit:focus {
+        border: 2px solid #4f46e5;
+        background-color: #f9f9ff;
+    }</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="placeholderText">
+       <string>Token</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>HomeWindow</class>
+ <widget class="QMainWindow" name="HomeWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Home</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: qlineargradient(
+            x1:0, y1:0, x2:1, y2:1,
+            stop:0 #e3f2fd,
+            stop:1 #bbdefb
+        );</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="logoutPushButton">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>470</y>
+      <width>111</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+        background-color: qlineargradient(
+            x1:0, y1:0, x2:1, y2:1,
+            stop:0 #42a5f5,
+            stop:1 #1e88e5
+        );
+        color: white;
+        border: none;
+        border-radius: 10px;
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    QPushButton:hover {
+        background-color: qlineargradient(
+            x1:0, y1:0, x2:1, y2:1,
+            stop:0 #64b5f6,
+            stop:1 #2196f3
+        );
+    }
+
+    QPushButton:pressed {
+        background-color: #1565c0;
+    }</string>
+    </property>
+    <property name="text">
+     <string>LogOut</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="namesurname_label">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>251</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+        font-size: 20px;
+        font-weight: bold;
+        color: #333;
+        background-color: transparent;
+        text-align: center;
+        padding: 10px;
+        border-radius: 8px;
+        transition: color 0.3s ease-in-out;
+    }
+
+    QLabel:hover {
+        color: #42a5f5;
+    }
+
+    QLabel:focus {
+        color: #1e88e5;
+    }
+</string>
+    </property>
+    <property name="text">
+     <string>Name Surname</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="sendpushButton">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>470</y>
+      <width>111</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+        background-color: qlineargradient(
+            x1:0, y1:0, x2:1, y2:1,
+            stop:0 #42a5f5,
+            stop:1 #1e88e5
+        );
+        color: white;
+        border: none;
+        border-radius: 10px;
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    QPushButton:hover {
+        background-color: qlineargradient(
+            x1:0, y1:0, x2:1, y2:1,
+            stop:0 #64b5f6,
+            stop:1 #2196f3
+        );
+    }
+
+    QPushButton:pressed {
+        background-color: #1565c0;
+    }</string>
+    </property>
+    <property name="text">
+     <string>Send</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="historypushButton">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>470</y>
+      <width>111</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+        background-color: qlineargradient(
+            x1:0, y1:0, x2:1, y2:1,
+            stop:0 #42a5f5,
+            stop:1 #1e88e5
+        );
+        color: white;
+        border: none;
+        border-radius: 10px;
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    QPushButton:hover {
+        background-color: qlineargradient(
+            x1:0, y1:0, x2:1, y2:1,
+            stop:0 #64b5f6,
+            stop:1 #2196f3
+        );
+    }
+
+    QPushButton:pressed {
+        background-color: #1565c0;
+    }</string>
+    </property>
+    <property name="text">
+     <string>History</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>267</x>
+      <y>79</y>
+      <width>291</width>
+      <height>145</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QLabel" name="balance_label">
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+        font-size: 20px;
+        font-weight: bold;
+        color: #333;
+        background-color: transparent;
+        text-align: center;
+        padding: 10px;
+        border-radius: 8px;
+        transition: color 0.3s ease-in-out;
+    }
+
+    QLabel:hover {
+        color: #42a5f5;
+    }
+
+    QLabel:focus {
+        color: #1e88e5;
+    }
+</string>
+       </property>
+       <property name="text">
+        <string>0.0</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignmentFlag::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="token_label">
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+        font-size: 20px;
+        font-weight: bold;
+        color: #333;
+        background-color: transparent;
+        text-align: center;
+        padding: 10px;
+        border-radius: 8px;
+        transition: color 0.3s ease-in-out;
+    }
+
+    QLabel:hover {
+        color: #42a5f5;
+    }
+
+    QLabel:focus {
+        color: #1e88e5;
+    }
+</string>
+       </property>
+       <property name="text">
+        <string>Token</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="tokenCopypushButton">
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+        background-color: qlineargradient(
+            x1:0, y1:0, x2:1, y2:1,
+            stop:0 #42a5f5,
+            stop:1 #1e88e5
+        );
+        color: white;
+        border: none;
+        border-radius: 10px;
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    QPushButton:hover {
+        background-color: qlineargradient(
+            x1:0, y1:0, x2:1, y2:1,
+            stop:0 #64b5f6,
+            stop:1 #2196f3
+        );
+    }
+
+    QPushButton:pressed {
+        background-color: #1565c0;
+    }</string>
+       </property>
+       <property name="text">
+        <string>Copy</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>37</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuHome">
+    <property name="title">
+     <string>Home</string>
+    </property>
+   </widget>
+   <addaction name="menuHome"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
