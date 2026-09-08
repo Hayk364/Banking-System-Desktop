@@ -28,6 +28,10 @@
 #include <QUrl>
 #include <QStringList>
 
+namespace LLC{
+    std::vector<long long> S_Size;
+
+};
 
 using json = nlohmann::json;
 
